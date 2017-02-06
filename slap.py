@@ -4,6 +4,9 @@ class Char:
         self.age = age
         self.race = race
         self.charclass = charclass
+        
+    def slap(self)
+        print("youve been slapped")
 
     def greet(self):
         print("{}: Hello, my name is {}. I am a {}".format(self.name, self.name, self.charclass))
@@ -21,3 +24,5 @@ newcharrace = input('what is your race? (human, elf, dwarf): ')
 newcharclass = input('what is your class? (mage, warrior, thief): ')
 
 player = Char(newcharname, newcharage, newcharrace, newcharclass)
+
+player.slap()
