@@ -6,7 +6,7 @@ class Char:
         self.charclass = charclass
         
     def slap(self):
-        print("youve been slapped")
+        print("you've been hacked")
 
     def greet(self):
         print("{}: Hello, my name is {}. I am a {}".format(self.name, self.name, self.charclass))
