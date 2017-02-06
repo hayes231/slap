@@ -5,7 +5,7 @@ class Char:
         self.race = race
         self.charclass = charclass
         
-    def slap(self)
+    def slap(self):
         print("youve been slapped")
 
     def greet(self):
