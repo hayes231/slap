@@ -1,3 +1,10 @@
+from datetime import date
+
+def age(birthdate):
+    today = date.today()
+    age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
+    return age
+
 class Char:
     def __init__(self, name, age, race, charclass):
         self.name = name
@@ -11,13 +18,13 @@ class Char:
     def greet(self):
         print("{}: Hello, my name is {}. I am a {}".format(self.name, self.name, self.charclass))
 
-Hayes = Char('Hayes', 18, 'human', 'warrior')
-Baron = Char('Baron', 43, 'human', 'blacksmith')
+hayes = Char('Hayes', age(date(1998, 6, 8)), 'human', 'warrior')
+baron = Char('Baron', 43, 'human', 'blacksmith')
 
-Hayes.greet()
+hayes.greet()
 
 newcharname = input('what is your name?: ')
-newcharage = input('how old are you?: ')
+newcharage = input('what is your birthday? (MM/DD/YYYY): ')
 if int(newcharage) < 18:
     exit("you are not old enough to play this game")
 newcharrace = input('what is your race? (human, elf, dwarf): ')
