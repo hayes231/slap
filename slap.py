@@ -8,7 +8,7 @@ def age(birthdate):
 class Char:
     def __init__(self, name, age, race, charclass):
         self.name = name
-        self.age = age
+        self.age = age 
         self.race = race
         self.charclass = charclass
         
@@ -16,7 +16,7 @@ class Char:
         print("you've been hacked")
 
     def greet(self):
-        print("{}: Hello, my name is {}. I am a {}. I am {} years old".format(self.name, self.name, self.charclass, self.age))
+        print(f"{self.name}: Hello, my name is {self.name}. I am a {self.charclass}. I am {self.age} years old")
 
 hayes = Char('Hayes', age(date(1998, 6, 8)), 'human', 'warrior')
 baron = Char('Baron', 43, 'human', 'blacksmith')
