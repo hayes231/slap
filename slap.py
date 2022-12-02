@@ -11,9 +11,6 @@ class Char:
         self.age = age 
         self.race = race
         self.charclass = charclass
-        
-    def slap(self):
-        print("you've been hacked")
 
     def greet(self):
         print(f"{self.name}: Hello, my name is {self.name}. I am a {self.charclass}. I am {self.age} years old")
@@ -38,4 +35,4 @@ newcharclass = input('what is your class? (mage, warrior, thief): ')
 
 player = Char(newcharname, newcharage, newcharrace, newcharclass)
 
-player.slap()
+agreement = input(f"So you're a {player.age} year old {player.race} {player.charclass} named {player.name}?")
