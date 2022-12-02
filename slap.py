@@ -35,4 +35,9 @@ newcharclass = input('what is your class? (mage, warrior, thief): ')
 
 player = Char(newcharname, newcharage, newcharrace, newcharclass)
 
-agreement = input(f"So you're a {player.age} year old {player.race} {player.charclass} named {player.name}?")
+agreement = input(f"So you're a {player.age} year old {player.race} {player.charclass} named {player.name}? (Y/N)")
+
+if agreement.lower() != "yes" and agreement.lower("y"):
+    print("bruh")
+else:
+    print("nice")
