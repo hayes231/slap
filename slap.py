@@ -27,10 +27,12 @@ newcharname = input('what is your name?: ')
 newcharage = input('what is your birthday? (M/D/YYYY): ')
 bmonth, bday, byear = newcharage.split("/")
 newcharage = age(date(int(byear), int(bmonth), int(bday)))
+
 if int(newcharage) < 18:
     exit("you are not old enough to play this game")
 else:
     print(f"you are {newcharage}!")
+    
 newcharrace = input('what is your race? (human, elf, dwarf): ')
 newcharclass = input('what is your class? (mage, warrior, thief): ')
 
