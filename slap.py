@@ -7,5 +7,5 @@ baron = Char('Baron', 43, 'human', 'blacksmith')
 hayes.greet()
 
 newchar()
-input("\npress enter to quit")
+input("Press enter to calculate your results!")
 animation()

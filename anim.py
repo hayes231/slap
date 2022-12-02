@@ -1,21 +1,23 @@
-import os
 import time
-
 def animation():
     x = 0
     while x < 20:
         x += 1
-        print("Calculating.   \\")
-        time.sleep(0.05)
-        os.system('cls||clear')
-        print("Calculating..  |")
-        time.sleep(0.05)
-        os.system('cls||clear')
-        print("Calculating... /")
-        time.sleep(0.05)
-        os.system('cls||clear')
-        print("Calculating.   -")
-        time.sleep(0.05)
-        os.system('cls||clear')
+        print("  Calculating.   \\ [     ] <>", end="", flush=True)
+        print("\r", end="", flush=True)
+        time.sleep(.05)
+        print("  Calculating..  | [  =  ] ==", end="", flush=True)
+        print("\r", end="", flush=True)
+        time.sleep(.05)
+        print("  Calculating... / [ === ] --", end="", flush=True)
+        print("\r", end="", flush=True)
+        time.sleep(.05)
+        print("  Calculating.   - [=====] {}", end="", flush=True)
+        print("\r", end="", flush=True)
+        time.sleep(.05)
 
-    input("Results are in: you're a bitch")  
+    print("Results are in:                ", end="", flush=True)
+    time.sleep(3)
+    print("\r", end="", flush=True)
+    print("Results are in: You're a bitch")
+    input("")
